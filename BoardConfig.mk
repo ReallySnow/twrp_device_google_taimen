@@ -15,7 +15,8 @@
 #
 
 # Allow Lineage config to override others
--include device/google/taimen/BoardConfigLineage.mk
+TARGET_PREBUILT_KERNEL := device/google/taimen/prebuilt/Image.gz-dtb
+TARGET_KERNEL_CONFIG := lineageos_taimen_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x0000008c
