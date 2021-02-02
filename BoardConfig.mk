@@ -15,9 +15,7 @@
 #
 
 # Allow Lineage config to override others
-# Prebuilt Kernel
 TARGET_PREBUILT_KERNEL := device/google/taimen/prebuilt/Image.gz-dtb
-# Build Kernel
 TARGET_KERNEL_CONFIG := lineageos_taimen_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := taimen
@@ -46,6 +44,3 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
 # VTS DTBO Verification. This kernel cmdline parameter should be added by the bootloader
 # for all future devices.
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=12
-# Shrp
-SHRP_PATH := device/google/taimen
-SHRP_DEVICE_CODE := taimen
